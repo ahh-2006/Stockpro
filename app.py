@@ -18,6 +18,14 @@ from core.scanner import scan_market, get_default_tickers
 # --- Page Config ---
 st.set_page_config(page_title="StockPro Platform", page_icon="📈", layout="wide", initial_sidebar_state="expanded")
 
+# --- Logo ---
+logo_path = "assets/logo.png"
+if os.path.exists(logo_path):
+    st.sidebar.image(logo_path, use_container_width=True)
+    if hasattr(st, "logo"):
+        st.logo(logo_path)
+
+
 # --- CSS Injection ---
 st.markdown("""
 <style>
