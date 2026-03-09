@@ -74,12 +74,12 @@ def fetch_prices_yahoo(
         # Extract OHLCV data
         quote = result['indicators']['quote'][0]
         df = pd.DataFrame({
-            'Date': dates,
-            'Open': quote['open'],
-            'High': quote['high'],
-            'Low': quote['low'],
-            'Close': quote['close'],
-            'Volume': quote['volume']
+            'date': dates,
+            'open': quote['open'],
+            'high': quote['high'],
+            'low': quote['low'],
+            'close': quote['close'],
+            'volume': quote['volume']
         })
         
         # Handle dividends and splits if available
