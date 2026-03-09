@@ -9,11 +9,11 @@ from datetime import datetime
 import json
 from pathlib import Path
 from io import StringIO
-from stockpro.data.ingest import fetch_prices_yahoo
-from stockpro.indicators.tech import add_indicators
-from stockpro.signals.rules import basic_signals
+from core.data.ingest import fetch_prices_yahoo
+from core.indicators.tech import add_indicators
+from core.signals.rules import basic_signals
 from streamlit_extras.colored_header import colored_header
-from stockpro.scanner import scan_market, get_default_tickers
+from core.scanner import scan_market, get_default_tickers
 
 # --- Page Config ---
 st.set_page_config(page_title="StockPro Platform", page_icon="📈", layout="wide", initial_sidebar_state="expanded")

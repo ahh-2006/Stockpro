@@ -1,5 +1,5 @@
 import pandas as pd
-from stockpro.scanner import scan_market, get_default_tickers
+from core.scanner import scan_market, get_default_tickers
 import yfinance as yf
 
 print("--- Debugging Scanner ---")
