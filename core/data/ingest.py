@@ -89,7 +89,7 @@ def fetch_prices_yahoo(
             if 'splits' in result['events']:
                 df['Split'] = 1.0
         
-        df.set_index('Date', inplace=True)
+        df.set_index('date', inplace=True)
         df.dropna(inplace=True)
         
         return df
