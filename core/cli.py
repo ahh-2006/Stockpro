@@ -3,9 +3,9 @@ from datetime import datetime
 from typing import Optional, List
 import click
 import pandas as pd
-from stockpro.data.ingest import fetch_and_save, fetch_prices_yahoo
-from stockpro.indicators.tech import add_indicators
-from stockpro.signals.rules import basic_signals
+from core.data.ingest import fetch_and_save, fetch_prices_yahoo
+from core.indicators.tech import add_indicators
+from core.signals.rules import basic_signals
 
 
 @click.group()

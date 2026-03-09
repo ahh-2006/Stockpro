@@ -1,5 +1,5 @@
 import pandas as pd
-from stockpro.data.ingest import fetch_prices_yahoo
+from core.data.ingest import fetch_prices_yahoo
 import yfinance as yf
 
 print("--- Testing fetch_prices_yahoo for GEVO ---")
