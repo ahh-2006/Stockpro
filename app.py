@@ -602,6 +602,18 @@ if (run or auto_update or force_run) and tickers_input:
             "kel_mult": kel_mult,
         }
         df = basic_signals(add_indicators(df, params=params))
+        # Ensure date column exists for plotting
+        if "date" not in df.columns:
+            if "Date" in df.columns:
+                df = df.rename(columns={"Date": "date"})
+            else:
+                # If no date column exists, reset index to get date from index
+                df = df.reset_index()
+                if "index" in df.columns:
+                    df = df.rename(columns={"index": "date"})
+                elif "date" not in df.columns and len(df) > 0:
+                    # Create a simple date range if nothing else works
+                    df["date"] = pd.date_range(end=pd.Timestamp.now(), periods=len(df), freq='D')
         
         # --- Dashboard Header ---
         last_price = float(df["close"].iloc[-1])
