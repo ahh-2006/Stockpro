@@ -73,6 +73,49 @@ html, body, [class^="css"]  {
   min-width: 120px;
   text-align: center;
 }
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .sp-metric-card {
+    min-width: 45%; /* Two cards per row on mobile */
+    flex: 1 1 45%;
+    margin-bottom: 5px;
+    padding: 8px 10px;
+  }
+  .sp-metric-label {
+    font-size: 10px !important;
+  }
+  .sp-metric-value {
+    font-size: 16px !important;
+  }
+  [data-testid="stSidebar"] {
+    min-width: 200px !important;
+    max-width: 250px !important;
+  }
+  h1, h2, h3 {
+    font-size: 1.2rem !important;
+  }
+  .sp-card {
+    padding: 10px;
+  }
+  /* Improve chart container on mobile */
+  .js-plotly-plot {
+    width: 100% !important;
+  }
+}
+@media (max-width: 600px) {
+  .block-container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 2rem !important;
+  }
+}
+@media (max-width: 480px) {
+  .sp-metric-card {
+    min-width: 100%; /* Full width cards on very small screens */
+    flex: 1 1 100%;
+  }
+}
+
 .sp-metric-label {
   font-size: 12px;
   color: #8b949e;
