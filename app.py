@@ -994,35 +994,35 @@ if (run or auto_update or force_run) and tickers_input:
 # --- Welcome Screen (Empty State) ---
 if section == "المؤشرات" and not tickers_input:
     st.markdown("""
-    <div style="text-align: center; padding: 60px 20px; max-width: 800px; margin: 0 auto;">
-        <h1 style="color: #58a6ff; margin-bottom: 15px; font-size: 2.5rem; font-weight: 700;">مرحبًا بك في StockPro</h1>
-        <p style="font-size: 20px; color: #8b949e; margin-bottom: 50px;">منصتك الاحترافية لتحليل الأسواق المالية بالذكاء الاصطناعي</p>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin: 40px 0;">
-            <div style="background: linear-gradient(135deg, #1e2329 0%, #161b22 100%); padding: 30px; border-radius: 16px; border: 1px solid #30363D; box-shadow: 0 8px 16px rgba(0,0,0,0.4); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.4)';">
-                <div style="width: 60px; height: 4px; background: linear-gradient(90deg, #3b82f6, #60a5fa); border-radius: 2px; margin-bottom: 20px;"></div>
-                <h3 style="color: #e6edf3; font-size: 20px; margin: 0 0 15px 0; font-weight: 600;">تحليل فني متقدم</h3>
-                <p style="font-size: 14px; color: #8b949e; line-height: 1.7; margin: 0;">رسوم بيانية تفاعلية مع مؤشرات RSI, MACD, Bollinger Bands والمزيد من الأدوات الاحترافية.</p>
-            </div>
-            
-            <div style="background: linear-gradient(135deg, #1e2329 0%, #161b22 100%); padding: 30px; border-radius: 16px; border: 1px solid #30363D; box-shadow: 0 8px 16px rgba(0,0,0,0.4); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.4)';">
-                <div style="width: 60px; height: 4px; background: linear-gradient(90deg, #10b981, #34d399); border-radius: 2px; margin-bottom: 20px;"></div>
-                <h3 style="color: #e6edf3; font-size: 20px; margin: 0 0 15px 0; font-weight: 600;">ماسح ضوئي ذكي</h3>
-                <p style="font-size: 14px; color: #8b949e; line-height: 1.7; margin: 0;">اكتشف الفرص الاستثمارية لحظياً بناءً على الحجم، السعر، والتغيير مع خوارزميات متقدمة.</p>
-            </div>
-            
-            <div style="background: linear-gradient(135deg, #1e2329 0%, #161b22 100%); padding: 30px; border-radius: 16px; border: 1px solid #30363D; box-shadow: 0 8px 16px rgba(0,0,0,0.4); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.4)';">
-                <div style="width: 60px; height: 4px; background: linear-gradient(90deg, #f59e0b, #fbbf24); border-radius: 2px; margin-bottom: 20px;"></div>
-                <h3 style="color: #e6edf3; font-size: 20px; margin: 0 0 15px 0; font-weight: 600;">إدارة مخاطر</h3>
-                <p style="font-size: 14px; color: #8b949e; line-height: 1.7; margin: 0;">حاسبة مخاطر مدمجة ومحفظة افتراضية لتتبع صفقاتك بأمان وفعالية.</p>
-            </div>
+<div style="text-align: center; padding: 60px 20px; max-width: 800px; margin: 0 auto;">
+    <h1 style="color: #58a6ff; margin-bottom: 15px; font-size: 2.5rem; font-weight: 700;">مرحبًا بك في StockPro</h1>
+    <p style="font-size: 20px; color: #8b949e; margin-bottom: 50px;">منصتك الاحترافية لتحليل الأسواق المالية بالذكاء الاصطناعي</p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin: 40px 0;">
+        <div style="background: linear-gradient(135deg, #1e2329 0%, #161b22 100%); padding: 30px; border-radius: 16px; border: 1px solid #30363D; box-shadow: 0 8px 16px rgba(0,0,0,0.4); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.4)';">
+            <div style="width: 60px; height: 4px; background: linear-gradient(90deg, #3b82f6, #60a5fa); border-radius: 2px; margin-bottom: 20px;"></div>
+            <h3 style="color: #e6edf3; font-size: 20px; margin: 0 0 15px 0; font-weight: 600;">تحليل فني متقدم</h3>
+            <p style="font-size: 14px; color: #8b949e; line-height: 1.7; margin: 0;">رسوم بيانية تفاعلية مع مؤشرات RSI, MACD, Bollinger Bands والمزيد من الأدوات الاحترافية.</p>
         </div>
         
-        <div style="margin-top: 60px; padding: 25px; background: linear-gradient(135deg, #161b22 0%, #0d1117 100%); border-radius: 12px; border: 1px solid #30363D; display: inline-block; max-width: 600px;">
-            <p style="color: #8b949e; margin: 0; font-size: 16px;">💡 ابدأ رحلتك الاستثمارية: اكتب رمز السهم في الحقل أعلاه (مثال: AAPL, TSLA) أو استكشف الماسح الضوئي للعثور على الفرص.</p>
+        <div style="background: linear-gradient(135deg, #1e2329 0%, #161b22 100%); padding: 30px; border-radius: 16px; border: 1px solid #30363D; box-shadow: 0 8px 16px rgba(0,0,0,0.4); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.4)';">
+            <div style="width: 60px; height: 4px; background: linear-gradient(90deg, #10b981, #34d399); border-radius: 2px; margin-bottom: 20px;"></div>
+            <h3 style="color: #e6edf3; font-size: 20px; margin: 0 0 15px 0; font-weight: 600;">ماسح ضوئي ذكي</h3>
+            <p style="font-size: 14px; color: #8b949e; line-height: 1.7; margin: 0;">اكتشف الفرص الاستثمارية لحظياً بناءً على الحجم، السعر، والتغيير مع خوارزميات متقدمة.</p>
+        </div>
+        
+        <div style="background: linear-gradient(135deg, #1e2329 0%, #161b22 100%); padding: 30px; border-radius: 16px; border: 1px solid #30363D; box-shadow: 0 8px 16px rgba(0,0,0,0.4); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.4)';">
+            <div style="width: 60px; height: 4px; background: linear-gradient(90deg, #f59e0b, #fbbf24); border-radius: 2px; margin-bottom: 20px;"></div>
+            <h3 style="color: #e6edf3; font-size: 20px; margin: 0 0 15px 0; font-weight: 600;">إدارة مخاطر</h3>
+            <p style="font-size: 14px; color: #8b949e; line-height: 1.7; margin: 0;">حاسبة مخاطر مدمجة ومحفظة افتراضية لتتبع صفقاتك بأمان وفعالية.</p>
         </div>
     </div>
-    """, unsafe_allow_html=True)
+    
+    <div style="margin-top: 60px; padding: 25px; background: linear-gradient(135deg, #161b22 0%, #0d1117 100%); border-radius: 12px; border: 1px solid #30363D; display: inline-block; max-width: 600px;">
+        <p style="color: #8b949e; margin: 0; font-size: 16px;">💡 ابدأ رحلتك الاستثمارية: اكتب رمز السهم في الحقل أعلاه (مثال: AAPL, TSLA) أو استكشف الماسح الضوئي للعثور على الفرص.</p>
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
 # --- Footer ---
 st.markdown("""
